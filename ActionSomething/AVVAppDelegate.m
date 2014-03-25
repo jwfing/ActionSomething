@@ -19,7 +19,7 @@
                       clientKey:@"en88kilv49mmzg6dobc5qztv6gum92atihl7afcd61uw92ni"];
     [AVOSCloud useAVCloudCN];
     
-    [AVOSCloudSNS setupPlatform:AVOSCloudSNSSinaWeibo withAppKey:@"2548122881" andAppSecret:@"ba37a6eb3018590b0d75da733c4998f8" andRedirectURI:@"http://wanpaiapp.com/oauth/callback/sina"];
+    [AVOSCloudSNS setupPlatform:AVOSCloudSNSSinaWeibo withAppKey:@"6513281" andAppSecret:@"ba37a6e0b0d75da733c499889" andRedirectURI:@"http://avoscloud.com/oauth/callback/sina"];
 
     [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
