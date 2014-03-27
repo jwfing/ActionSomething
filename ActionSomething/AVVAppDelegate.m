@@ -17,7 +17,6 @@
     // Override point for customization after application launch.
     [AVOSCloud setApplicationId:@"x9ldp7axwyt3ltlox4258qmqan5l6h0dg9fxvo16vcwcimaq"
                       clientKey:@"en88kilv49mmzg6dobc5qztv6gum92atihl7afcd61uw92ni"];
-    [AVOSCloud useAVCloudCN];
     
     [AVOSCloudSNS setupPlatform:AVOSCloudSNSSinaWeibo withAppKey:@"6513281" andAppSecret:@"ba37a6e0b0d75da733c499889" andRedirectURI:@"http://avoscloud.com/oauth/callback/sina"];
 
@@ -61,6 +60,7 @@
     return [AVOSCloudSNS handleOpenURL:url];
 }
 
+// handle push methods.
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     AVInstallation *currentInstallation = [AVInstallation currentInstallation];
     [currentInstallation setDeviceTokenFromData:deviceToken];
