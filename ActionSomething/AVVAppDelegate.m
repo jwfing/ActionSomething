@@ -18,11 +18,9 @@
     [AVOSCloud setApplicationId:@"x9ldp7axwyt3ltlox4258qmqan5l6h0dg9fxvo16vcwcimaq"
                       clientKey:@"en88kilv49mmzg6dobc5qztv6gum92atihl7afcd61uw92ni"];
     
-    [AVOSCloudSNS setupPlatform:AVOSCloudSNSSinaWeibo withAppKey:@"6513281" andAppSecret:@"ba37a6e0b0d75da733c499889" andRedirectURI:@"http://avoscloud.com/oauth/callback/sina"];
+    [AVOSCloudSNS setupPlatform:AVOSCloudSNSSinaWeibo withAppKey:@"2858658895" andAppSecret:@"9d97c1cce2893cbdcdc970f05bc55fe4" andRedirectURI:@"http://vz.avosapps.com/oauth?type=weibo"];
 
     [AVAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    
-    NSDictionary *notificationPayload = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey];
     
     [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound];
 

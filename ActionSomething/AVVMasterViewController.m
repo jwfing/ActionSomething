@@ -31,18 +31,15 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(logInOut:)];
     self.navigationItem.rightBarButtonItem = addButton;
-  
-    if (![AVUser currentUser]) {
-        // force to login
-        AVVLoginViewController *loginVC = [[AVVLoginViewController alloc] initWithNibName:@"AVVLoginViewController" bundle:nil];
-        [self.navigationController pushViewController:loginVC animated:YES];
-    }
 }
 
 - (void) viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     AVUser *currentUser = [AVUser currentUser];
     if (!currentUser) {
+        // force to login
+        AVVLoginViewController *loginVC = [[AVVLoginViewController alloc] initWithNibName:@"AVVLoginViewController" bundle:nil];
+        [self.navigationController pushViewController:loginVC animated:YES];
         return;
     }
     if (_objects) {

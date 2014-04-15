@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C70F49618F3BE9800DB5542 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C70F49518F3BE9800DB5542 /* AVFoundation.framework */; };
+		5C70F49D18F410B200DB5542 /* AVOSCloudVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C70F49C18F410B200DB5542 /* AVOSCloudVideo.framework */; };
 		5C87000018D8025900B604A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C87FFFF18D8025900B604A4 /* UIKit.framework */; };
 		5C87000618D8025900B604A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C87000418D8025900B604A4 /* InfoPlist.strings */; };
 		5C87000818D8025900B604A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C87000718D8025900B604A4 /* main.m */; };
@@ -22,32 +24,16 @@
 		5C87002A18D8025900B604A4 /* ActionSomethingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C87002918D8025900B604A4 /* ActionSomethingTests.m */; };
 		5C87003618D8026900B604A4 /* AVVLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C87003418D8026900B604A4 /* AVVLoginViewController.m */; };
 		5C87003718D8026900B604A4 /* AVVLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C87003518D8026900B604A4 /* AVVLoginViewController.xib */; };
-		5C87004E18D8191B00B604A4 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87003918D8191B00B604A4 /* back@2x.png */; };
 		5C87004F18D8191B00B604A4 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87003A18D8191B00B604A4 /* camera.png */; };
 		5C87005018D8191B00B604A4 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87003B18D8191B00B604A4 /* camera@2x.png */; };
 		5C87005118D8191B00B604A4 /* default_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87003C18D8191B00B604A4 /* default_video@2x.png */; };
-		5C87005218D8191B00B604A4 /* shot_change_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87003D18D8191B00B604A4 /* shot_change_selected@2x.png */; };
-		5C87005318D8191B00B604A4 /* shot_change@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87003E18D8191B00B604A4 /* shot_change@2x.png */; };
-		5C87005418D8191B00B604A4 /* shot_delete_disable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87003F18D8191B00B604A4 /* shot_delete_disable@2x.png */; };
-		5C87005518D8191B00B604A4 /* shot_delete_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87004018D8191B00B604A4 /* shot_delete_selected@2x.png */; };
-		5C87005618D8191B00B604A4 /* shot_delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87004118D8191B00B604A4 /* shot_delete@2x.png */; };
-		5C87005718D8191B00B604A4 /* shot_guide_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87004218D8191B00B604A4 /* shot_guide_1@2x.png */; };
-		5C87005818D8191B00B604A4 /* shot_guide_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87004318D8191B00B604A4 /* shot_guide_2@2x.png */; };
-		5C87005918D8191B00B604A4 /* shot_guide_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87004418D8191B00B604A4 /* shot_guide_3@2x.png */; };
-		5C87005A18D8191B00B604A4 /* shot_nav_button_next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87004518D8191B00B604A4 /* shot_nav_button_next@2x.png */; };
-		5C87005B18D8191B00B604A4 /* shot_shadow_disable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87004618D8191B00B604A4 /* shot_shadow_disable@2x.png */; };
-		5C87005C18D8191B00B604A4 /* shot_shadow_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87004718D8191B00B604A4 /* shot_shadow_selected@2x.png */; };
-		5C87005D18D8191B00B604A4 /* shot_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87004818D8191B00B604A4 /* shot_shadow@2x.png */; };
-		5C87005E18D8191B00B604A4 /* shot_timer_disable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87004918D8191B00B604A4 /* shot_timer_disable@2x.png */; };
-		5C87005F18D8191B00B604A4 /* shot_timer_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87004A18D8191B00B604A4 /* shot_timer_selected@2x.png */; };
-		5C87006018D8191B00B604A4 /* shot_timer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87004B18D8191B00B604A4 /* shot_timer@2x.png */; };
 		5C87006118D8191B00B604A4 /* tencentlogin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87004C18D8191B00B604A4 /* tencentlogin@2x.png */; };
 		5C87006218D8191B00B604A4 /* weibologin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C87004D18D8191B00B604A4 /* weibologin@2x.png */; };
 		5C87006518D81A8400B604A4 /* AVVMediaViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C87006418D81A8400B604A4 /* AVVMediaViewCell.m */; };
 		5C87006818D81AAB00B604A4 /* AVVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C87006718D81AAB00B604A4 /* AVVPlayer.m */; };
-		5C87006A18D81C6500B604A4 /* AVOSCloudVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C87006918D81C6500B604A4 /* AVOSCloudVideo.framework */; };
 		5C87FFFC18D8025900B604A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C87FFFB18D8025900B604A4 /* Foundation.framework */; };
 		5C87FFFE18D8025900B604A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C87FFFD18D8025900B604A4 /* CoreGraphics.framework */; };
+		5CCBD20D18F6A0BC0089C28E /* AVOSCloudVideo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5CCBD20C18F6A0BC0089C28E /* AVOSCloudVideo.bundle */; };
 		EFAA9E61D1B84F418FB87F2B /* libPods-ActionSomething.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA4E5F335A44137A0851EDD /* libPods-ActionSomething.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		4AA4E5F335A44137A0851EDD /* libPods-ActionSomething.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ActionSomething.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C70F49518F3BE9800DB5542 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5C70F49C18F410B200DB5542 /* AVOSCloudVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloudVideo.framework; path = "../../Meiwei/paas/sdk/iOS/paas/video-release-frameworks/Release-universal/AVOSCloudVideo.framework"; sourceTree = "<group>"; };
 		5C87000318D8025900B604A4 /* ActionSomething-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ActionSomething-Info.plist"; sourceTree = "<group>"; };
 		5C87000518D8025900B604A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C87000718D8025900B604A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,36 +71,20 @@
 		5C87003318D8026900B604A4 /* AVVLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVVLoginViewController.h; sourceTree = "<group>"; };
 		5C87003418D8026900B604A4 /* AVVLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVVLoginViewController.m; sourceTree = "<group>"; };
 		5C87003518D8026900B604A4 /* AVVLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVVLoginViewController.xib; sourceTree = "<group>"; };
-		5C87003918D8191B00B604A4 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		5C87003A18D8191B00B604A4 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		5C87003B18D8191B00B604A4 /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
 		5C87003C18D8191B00B604A4 /* default_video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default_video@2x.png"; sourceTree = "<group>"; };
-		5C87003D18D8191B00B604A4 /* shot_change_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shot_change_selected@2x.png"; sourceTree = "<group>"; };
-		5C87003E18D8191B00B604A4 /* shot_change@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shot_change@2x.png"; sourceTree = "<group>"; };
-		5C87003F18D8191B00B604A4 /* shot_delete_disable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shot_delete_disable@2x.png"; sourceTree = "<group>"; };
-		5C87004018D8191B00B604A4 /* shot_delete_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shot_delete_selected@2x.png"; sourceTree = "<group>"; };
-		5C87004118D8191B00B604A4 /* shot_delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shot_delete@2x.png"; sourceTree = "<group>"; };
-		5C87004218D8191B00B604A4 /* shot_guide_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shot_guide_1@2x.png"; sourceTree = "<group>"; };
-		5C87004318D8191B00B604A4 /* shot_guide_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shot_guide_2@2x.png"; sourceTree = "<group>"; };
-		5C87004418D8191B00B604A4 /* shot_guide_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shot_guide_3@2x.png"; sourceTree = "<group>"; };
-		5C87004518D8191B00B604A4 /* shot_nav_button_next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shot_nav_button_next@2x.png"; sourceTree = "<group>"; };
-		5C87004618D8191B00B604A4 /* shot_shadow_disable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shot_shadow_disable@2x.png"; sourceTree = "<group>"; };
-		5C87004718D8191B00B604A4 /* shot_shadow_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shot_shadow_selected@2x.png"; sourceTree = "<group>"; };
-		5C87004818D8191B00B604A4 /* shot_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shot_shadow@2x.png"; sourceTree = "<group>"; };
-		5C87004918D8191B00B604A4 /* shot_timer_disable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shot_timer_disable@2x.png"; sourceTree = "<group>"; };
-		5C87004A18D8191B00B604A4 /* shot_timer_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shot_timer_selected@2x.png"; sourceTree = "<group>"; };
-		5C87004B18D8191B00B604A4 /* shot_timer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shot_timer@2x.png"; sourceTree = "<group>"; };
 		5C87004C18D8191B00B604A4 /* tencentlogin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tencentlogin@2x.png"; sourceTree = "<group>"; };
 		5C87004D18D8191B00B604A4 /* weibologin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "weibologin@2x.png"; sourceTree = "<group>"; };
 		5C87006318D81A8400B604A4 /* AVVMediaViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVVMediaViewCell.h; sourceTree = "<group>"; };
 		5C87006418D81A8400B604A4 /* AVVMediaViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVVMediaViewCell.m; sourceTree = "<group>"; };
 		5C87006618D81AAB00B604A4 /* AVVPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVVPlayer.h; sourceTree = "<group>"; };
 		5C87006718D81AAB00B604A4 /* AVVPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVVPlayer.m; sourceTree = "<group>"; };
-		5C87006918D81C6500B604A4 /* AVOSCloudVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloudVideo.framework; path = "../../Meiwei/paas/sdk/iOS/paas/video-release-frameworks/Release-universal/AVOSCloudVideo.framework"; sourceTree = "<group>"; };
 		5C87FFF818D8025900B604A4 /* ActionSomething.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActionSomething.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C87FFFB18D8025900B604A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5C87FFFD18D8025900B604A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5C87FFFF18D8025900B604A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5CCBD20C18F6A0BC0089C28E /* AVOSCloudVideo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AVOSCloudVideo.bundle; path = "../../../Meiwei/paas/sdk/iOS/paas/video-release-frameworks/Release-universal/AVOSCloudVideo.framework/Versions/A/Resources/AVOSCloudVideo.bundle"; sourceTree = "<group>"; };
 		5E52EA5B1D774C8B9710697E /* Pods-ActionSomething.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActionSomething.xcconfig"; path = "Pods/Pods-ActionSomething.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,11 +103,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C70F49618F3BE9800DB5542 /* AVFoundation.framework in Frameworks */,
+				5C70F49D18F410B200DB5542 /* AVOSCloudVideo.framework in Frameworks */,
 				5C87FFFE18D8025900B604A4 /* CoreGraphics.framework in Frameworks */,
 				5C87000018D8025900B604A4 /* UIKit.framework in Frameworks */,
 				5C87FFFC18D8025900B604A4 /* Foundation.framework in Frameworks */,
 				EFAA9E61D1B84F418FB87F2B /* libPods-ActionSomething.a in Frameworks */,
-				5C87006A18D81C6500B604A4 /* AVOSCloudVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,25 +166,10 @@
 		5C87003818D818E400B604A4 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				5C87003918D8191B00B604A4 /* back@2x.png */,
+				5CCBD20C18F6A0BC0089C28E /* AVOSCloudVideo.bundle */,
 				5C87003A18D8191B00B604A4 /* camera.png */,
 				5C87003B18D8191B00B604A4 /* camera@2x.png */,
 				5C87003C18D8191B00B604A4 /* default_video@2x.png */,
-				5C87003D18D8191B00B604A4 /* shot_change_selected@2x.png */,
-				5C87003E18D8191B00B604A4 /* shot_change@2x.png */,
-				5C87003F18D8191B00B604A4 /* shot_delete_disable@2x.png */,
-				5C87004018D8191B00B604A4 /* shot_delete_selected@2x.png */,
-				5C87004118D8191B00B604A4 /* shot_delete@2x.png */,
-				5C87004218D8191B00B604A4 /* shot_guide_1@2x.png */,
-				5C87004318D8191B00B604A4 /* shot_guide_2@2x.png */,
-				5C87004418D8191B00B604A4 /* shot_guide_3@2x.png */,
-				5C87004518D8191B00B604A4 /* shot_nav_button_next@2x.png */,
-				5C87004618D8191B00B604A4 /* shot_shadow_disable@2x.png */,
-				5C87004718D8191B00B604A4 /* shot_shadow_selected@2x.png */,
-				5C87004818D8191B00B604A4 /* shot_shadow@2x.png */,
-				5C87004918D8191B00B604A4 /* shot_timer_disable@2x.png */,
-				5C87004A18D8191B00B604A4 /* shot_timer_selected@2x.png */,
-				5C87004B18D8191B00B604A4 /* shot_timer@2x.png */,
 				5C87004C18D8191B00B604A4 /* tencentlogin@2x.png */,
 				5C87004D18D8191B00B604A4 /* weibologin@2x.png */,
 			);
@@ -246,7 +204,8 @@
 		5C87FFFA18D8025900B604A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5C87006918D81C6500B604A4 /* AVOSCloudVideo.framework */,
+				5C70F49C18F410B200DB5542 /* AVOSCloudVideo.framework */,
+				5C70F49518F3BE9800DB5542 /* AVFoundation.framework */,
 				5C87FFFB18D8025900B604A4 /* Foundation.framework */,
 				5C87FFFD18D8025900B604A4 /* CoreGraphics.framework */,
 				5C87FFFF18D8025900B604A4 /* UIKit.framework */,
@@ -343,30 +302,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C87005518D8191B00B604A4 /* shot_delete_selected@2x.png in Resources */,
-				5C87005618D8191B00B604A4 /* shot_delete@2x.png in Resources */,
 				5C87006118D8191B00B604A4 /* tencentlogin@2x.png in Resources */,
 				5C87003718D8026900B604A4 /* AVVLoginViewController.xib in Resources */,
-				5C87005418D8191B00B604A4 /* shot_delete_disable@2x.png in Resources */,
 				5C87001718D8025900B604A4 /* Images.xcassets in Resources */,
-				5C87006018D8191B00B604A4 /* shot_timer@2x.png in Resources */,
-				5C87005B18D8191B00B604A4 /* shot_shadow_disable@2x.png in Resources */,
-				5C87004E18D8191B00B604A4 /* back@2x.png in Resources */,
 				5C87000618D8025900B604A4 /* InfoPlist.strings in Resources */,
-				5C87005718D8191B00B604A4 /* shot_guide_1@2x.png in Resources */,
-				5C87005318D8191B00B604A4 /* shot_change@2x.png in Resources */,
 				5C87005118D8191B00B604A4 /* default_video@2x.png in Resources */,
 				5C87005018D8191B00B604A4 /* camera@2x.png in Resources */,
-				5C87005A18D8191B00B604A4 /* shot_nav_button_next@2x.png in Resources */,
-				5C87005F18D8191B00B604A4 /* shot_timer_selected@2x.png in Resources */,
-				5C87005E18D8191B00B604A4 /* shot_timer_disable@2x.png in Resources */,
-				5C87005218D8191B00B604A4 /* shot_change_selected@2x.png in Resources */,
+				5CCBD20D18F6A0BC0089C28E /* AVOSCloudVideo.bundle in Resources */,
 				5C87006218D8191B00B604A4 /* weibologin@2x.png in Resources */,
-				5C87005C18D8191B00B604A4 /* shot_shadow_selected@2x.png in Resources */,
-				5C87005818D8191B00B604A4 /* shot_guide_2@2x.png in Resources */,
-				5C87005918D8191B00B604A4 /* shot_guide_3@2x.png in Resources */,
 				5C87004F18D8191B00B604A4 /* camera.png in Resources */,
-				5C87005D18D8191B00B604A4 /* shot_shadow@2x.png in Resources */,
 				5C87000F18D8025900B604A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,6 +490,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/fengjunwen/Work/Meiwei/paas/sdk/iOS/paas/video-release-frameworks/Release-universal",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ActionSomething/ActionSomething-Prefix.pch";
@@ -564,6 +509,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/fengjunwen/Work/Meiwei/paas/sdk/iOS/paas/video-release-frameworks/Release-universal",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ActionSomething/ActionSomething-Prefix.pch";

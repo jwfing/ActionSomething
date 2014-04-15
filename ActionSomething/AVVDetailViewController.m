@@ -7,7 +7,9 @@
 //
 
 #import "AVVDetailViewController.h"
-#import <AVOSCloudVideo/AVSquareCaptureViewController.h>
+#import <AVFoundation/AVFoundation.h>
+#import <AVOSCloudVideo/AVOSCloudVideo.h>
+#import <AVOSCloudVideo/AVFullscreenCaptureViewController.h>
 #import <AVOSCloud/AVOSCloud.h>
 #import <AVOSCloud/AVPush.h>
 #import "AVVMediaViewCell.h"
@@ -245,7 +247,7 @@
 
 - (IBAction)openCamera:(id)sender {
     // open camera view controller, provided by AVOS Cloud
-    AVSquareCaptureViewController *avsc = [[AVSquareCaptureViewController alloc] init];
+    AVSquareCaptureViewController *avsc = [[AVSquareCaptureViewController alloc] initWithCapturePreset:nil];
     avsc.delegate = self;
     _currentVideo = [NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"Documents/%f.mp4", [NSDate timeIntervalSinceReferenceDate]]];
     avsc.finalOutputFile = _currentVideo;
