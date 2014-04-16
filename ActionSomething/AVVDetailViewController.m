@@ -9,7 +9,6 @@
 #import "AVVDetailViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AVOSCloudVideo/AVOSCloudVideo.h>
-#import <AVOSCloudVideo/AVFullscreenCaptureViewController.h>
 #import <AVOSCloud/AVOSCloud.h>
 #import <AVOSCloud/AVPush.h>
 #import "AVVMediaViewCell.h"
