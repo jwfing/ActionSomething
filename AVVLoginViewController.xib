@@ -34,6 +34,16 @@
                         <action selector="loginWithQQ:" destination="-1" eventType="touchUpInside" id="mzY-sd-Bct"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkg-5V-CH4">
+                    <rect key="frame" x="125" y="242" width="71" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="MoreApps">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadMoreApps:" destination="-1" eventType="touchUpInside" id="Lut-Q5-NTr"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.51004016064257018" green="0.66666666666666663" blue="0.35341365461847385" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

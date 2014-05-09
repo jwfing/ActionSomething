@@ -20,7 +20,7 @@
 #define TABLEVIEW_DEFAULT_HEIGHT ((IS_IPHONE_5?456:368)+OFFSET_Y_FOR_IOS_7)
 #define DEFAULT_CONTENT_HEIGHT 32.0
 
-@interface AVVDetailViewController ()<UITableViewDataSource, UITableViewDelegate, AVOSCloudCaptureDelegate> {
+@interface AVVDetailViewController ()<UITableViewDataSource, UITableViewDelegate, AVCaptureActionDelegate, AVPreviewActionDelegate> {
     NSMutableArray *_msgs;
     NSString *_channelName;
     NSString *_currentVideo;
@@ -142,7 +142,6 @@
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"numberOfRows: %d", [_msgs count]);
     return [_msgs count];
 }
 
@@ -157,7 +156,11 @@
         return cell;
     } else {
         AVVMediaViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VideoCell" forIndexPath:indexPath];
-        cell.mediaFile = [msg valueForKey:@"avfile"];
+        if (nil != [msg valueForKey:@"avfile"]) {
+            cell.mediaFile = [msg valueForKey:@"avfile"];
+        } else {
+            cell.mediaFile = [AVFile fileWithURL:[msg valueForKey:@"avfileUrl"]];
+        }
         return cell;
     }
 }
@@ -192,32 +195,42 @@
     return 0.0f;
 }
 
-#pragma mark - AVOSCloudCaptureDelegate
-- (void)finished:(BOOL)cancelled {
-    [self.navigationController popToRootViewControllerAnimated:YES];
-    if (!cancelled) {
-        AVFile *videoFile = [AVFile fileWithName:[NSString stringWithFormat:@"%f.mp4", [NSDate timeIntervalSinceReferenceDate]] contentsAtPath:_currentVideo];
-        [videoFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-            AVObject *msg = [AVObject objectWithClassName:@"Message"];
-            [msg setObject:_channelName forKey:@"channelName"];
-            [msg setObject:videoFile forKey:@"avfile"];
-            [msg setObject:[AVUser currentUser] forKey:@"spoke"];
-            [msg setObject:@"video" forKey:@"type"];
-            [msg saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-                if (error) {
-                    return ;
-                };
-                AVPush *push = [[AVPush alloc] init];
-                [push setChannel:_channelName];
-                [push setMessage:@"Update"];
-                [push sendPushInBackground];
-                
-                [self updateMsgs:[NSArray arrayWithObjects:msg, nil] refresh:NO];
-            }];
-        }];
-    } else {
+#pragma mark - AVCaptureActionDelegate
+- (void)completed:(id<AVOSCloudMediaItem>)item withError:(NSError*)error {
+    if (item) {
+        AVSquareMediaPreviewController *previewController = [[AVSquareMediaPreviewController alloc] init];
+        previewController.mediaItem = item;
+        previewController.delegate = self;
+        [self.navigationController pushViewController:previewController animated:YES];
+        NSLog(@"pushToPreviewController");
+    } else if (!error){
         [AVAnalytics event:@"CaptureCancelled"];
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    } else {
+        [self.navigationController popToRootViewControllerAnimated:YES];
     }
+}
+
+- (void)completed:(id<AVOSCloudMediaItem>)item {
+    [item saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        AVObject *msg = [AVObject objectWithClassName:@"Message"];
+        [msg setObject:_channelName forKey:@"channelName"];
+        [msg setObject:[item remoteURL] forKey:@"avfileUrl"];
+        [msg setObject:[AVUser currentUser] forKey:@"spoke"];
+        [msg setObject:@"video" forKey:@"type"];
+        [msg saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (error) {
+                return ;
+            };
+            [_msgs addObject:msg];
+            [self updateMsgs:_msgs refresh:NO];
+        }];
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }];
+}
+
+- (void)cancelled {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (IBAction)sendMsg:(id)sender {
@@ -248,8 +261,6 @@
     // open camera view controller, provided by AVOS Cloud
     AVSquareCaptureViewController *avsc = [[AVSquareCaptureViewController alloc] initWithCapturePreset:nil];
     avsc.delegate = self;
-    _currentVideo = [NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"Documents/%f.mp4", [NSDate timeIntervalSinceReferenceDate]]];
-    avsc.finalOutputFile = _currentVideo;
     [self.navigationController pushViewController:avsc animated:YES];
 }
 

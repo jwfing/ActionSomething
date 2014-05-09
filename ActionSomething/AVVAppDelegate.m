@@ -9,6 +9,7 @@
 #import "AVVAppDelegate.h"
 #import <AVOSCloudSNS/AVOSCloudSNS.h>
 #import <AVOSCloud/AVOSCloud.h>
+#import <AVOSCloudVideo/AVOSCloudVideo.h>
 
 @implementation AVVAppDelegate
 
@@ -17,6 +18,7 @@
     // Override point for customization after application launch.
     [AVOSCloud setApplicationId:@"x9ldp7axwyt3ltlox4258qmqan5l6h0dg9fxvo16vcwcimaq"
                       clientKey:@"en88kilv49mmzg6dobc5qztv6gum92atihl7afcd61uw92ni"];
+    [AVOSCloudVideo enableApplicationWithID:@"x9ldp7axwyt3ltlox4258qmqan5l6h0dg9fxvo16vcwcimaq"];
     
     [AVOSCloudSNS setupPlatform:AVOSCloudSNSSinaWeibo withAppKey:@"2858658895" andAppSecret:@"9d97c1cce2893cbdcdc970f05bc55fe4" andRedirectURI:@"http://vz.avosapps.com/oauth?type=weibo"];
 

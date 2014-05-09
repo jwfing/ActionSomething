@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5C70F49618F3BE9800DB5542 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C70F49518F3BE9800DB5542 /* AVFoundation.framework */; };
-		5C70F49D18F410B200DB5542 /* AVOSCloudVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C70F49C18F410B200DB5542 /* AVOSCloudVideo.framework */; };
-		5C86106C18FE8D1D00AD5F02 /* AVOSCloudSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C86106B18FE8D1D00AD5F02 /* AVOSCloudSNS.framework */; };
-		5C86107A18FE9D0100AD5F02 /* Pinyou.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5C86107918FE9D0100AD5F02 /* Pinyou.bundle */; };
 		5C87000018D8025900B604A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C87FFFF18D8025900B604A4 /* UIKit.framework */; };
 		5C87000618D8025900B604A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5C87000418D8025900B604A4 /* InfoPlist.strings */; };
 		5C87000818D8025900B604A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C87000718D8025900B604A4 /* main.m */; };
@@ -35,6 +32,7 @@
 		5C87006818D81AAB00B604A4 /* AVVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C87006718D81AAB00B604A4 /* AVVPlayer.m */; };
 		5C87FFFC18D8025900B604A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C87FFFB18D8025900B604A4 /* Foundation.framework */; };
 		5C87FFFE18D8025900B604A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C87FFFD18D8025900B604A4 /* CoreGraphics.framework */; };
+		5C8FAFB01918E0D70032DA8B /* AVOSCloudVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C8FAFAF1918E0D70032DA8B /* AVOSCloudVideo.framework */; };
 		5CCBD20D18F6A0BC0089C28E /* AVOSCloudVideo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5CCBD20C18F6A0BC0089C28E /* AVOSCloudVideo.bundle */; };
 		EFAA9E61D1B84F418FB87F2B /* libPods-ActionSomething.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AA4E5F335A44137A0851EDD /* libPods-ActionSomething.a */; };
 /* End PBXBuildFile section */
@@ -52,9 +50,6 @@
 /* Begin PBXFileReference section */
 		4AA4E5F335A44137A0851EDD /* libPods-ActionSomething.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ActionSomething.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C70F49518F3BE9800DB5542 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		5C70F49C18F410B200DB5542 /* AVOSCloudVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloudVideo.framework; path = "../../Meiwei/paas/sdk/iOS/paas/video-release-frameworks/Release-universal/AVOSCloudVideo.framework"; sourceTree = "<group>"; };
-		5C86106B18FE8D1D00AD5F02 /* AVOSCloudSNS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloudSNS.framework; path = ../../../Downloads/AVOSCloudSNS.framework; sourceTree = "<group>"; };
-		5C86107918FE9D0100AD5F02 /* Pinyou.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Pinyou.bundle; path = ../../../../Downloads/libPinyou/Pinyou.bundle; sourceTree = "<group>"; };
 		5C87000318D8025900B604A4 /* ActionSomething-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ActionSomething-Info.plist"; sourceTree = "<group>"; };
 		5C87000518D8025900B604A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5C87000718D8025900B604A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,6 +83,7 @@
 		5C87FFFB18D8025900B604A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5C87FFFD18D8025900B604A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5C87FFFF18D8025900B604A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5C8FAFAF1918E0D70032DA8B /* AVOSCloudVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloudVideo.framework; path = "../../Meiwei/paas/sdk/iOS/paas/video-release-frameworks/Release-universal/AVOSCloudVideo.framework"; sourceTree = "<group>"; };
 		5CCBD20C18F6A0BC0089C28E /* AVOSCloudVideo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AVOSCloudVideo.bundle; path = "../../../Meiwei/paas/sdk/iOS/paas/video-release-frameworks/Release-universal/AVOSCloudVideo.framework/Versions/A/Resources/AVOSCloudVideo.bundle"; sourceTree = "<group>"; };
 		5E52EA5B1D774C8B9710697E /* Pods-ActionSomething.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActionSomething.xcconfig"; path = "Pods/Pods-ActionSomething.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,10 +104,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C70F49618F3BE9800DB5542 /* AVFoundation.framework in Frameworks */,
-				5C70F49D18F410B200DB5542 /* AVOSCloudVideo.framework in Frameworks */,
 				5C87FFFE18D8025900B604A4 /* CoreGraphics.framework in Frameworks */,
 				5C87000018D8025900B604A4 /* UIKit.framework in Frameworks */,
-				5C86106C18FE8D1D00AD5F02 /* AVOSCloudSNS.framework in Frameworks */,
+				5C8FAFB01918E0D70032DA8B /* AVOSCloudVideo.framework in Frameworks */,
 				5C87FFFC18D8025900B604A4 /* Foundation.framework in Frameworks */,
 				EFAA9E61D1B84F418FB87F2B /* libPods-ActionSomething.a in Frameworks */,
 			);
@@ -171,7 +166,6 @@
 		5C87003818D818E400B604A4 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				5C86107918FE9D0100AD5F02 /* Pinyou.bundle */,
 				5CCBD20C18F6A0BC0089C28E /* AVOSCloudVideo.bundle */,
 				5C87003A18D8191B00B604A4 /* camera.png */,
 				5C87003B18D8191B00B604A4 /* camera@2x.png */,
@@ -210,8 +204,7 @@
 		5C87FFFA18D8025900B604A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5C86106B18FE8D1D00AD5F02 /* AVOSCloudSNS.framework */,
-				5C70F49C18F410B200DB5542 /* AVOSCloudVideo.framework */,
+				5C8FAFAF1918E0D70032DA8B /* AVOSCloudVideo.framework */,
 				5C70F49518F3BE9800DB5542 /* AVFoundation.framework */,
 				5C87FFFB18D8025900B604A4 /* Foundation.framework */,
 				5C87FFFD18D8025900B604A4 /* CoreGraphics.framework */,
@@ -317,7 +310,6 @@
 				5C87005018D8191B00B604A4 /* camera@2x.png in Resources */,
 				5CCBD20D18F6A0BC0089C28E /* AVOSCloudVideo.bundle in Resources */,
 				5C87006218D8191B00B604A4 /* weibologin@2x.png in Resources */,
-				5C86107A18FE9D0100AD5F02 /* Pinyou.bundle in Resources */,
 				5C87004F18D8191B00B604A4 /* camera.png in Resources */,
 				5C87000F18D8025900B604A4 /* Main.storyboard in Resources */,
 			);
@@ -503,10 +495,44 @@
 					"/Users/fengjunwen/Work/Meiwei/paas/sdk/iOS/paas/ad-release-frameworks/Release-universal",
 					"/Users/fengjunwen/Work/Meiwei/paas/sdk/iOS/paas/ad-release-frameworks/Release-iphonesimulator",
 					"/Users/fengjunwen/Work/Meiwei/paas/sdk/iOS/paas/ad-release-frameworks/Release-iphoneos",
+					"/Users/fengjunwen/Work/Meiwei/paas/sdk/iOS/paas/sns-release-frameworks/Release-universal",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ActionSomething/ActionSomething-Prefix.pch";
 				INFOPLIST_FILE = "ActionSomething/ActionSomething-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ActionSomething",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-licucore",
+					"-framework",
+					AVOSCloud,
+					"-framework",
+					AVOSCloudUI,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					CFNetwork,
+					"-framework",
+					AVOSCloudSNS,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreLocation,
+					"-framework",
+					CoreTelephony,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -526,10 +552,44 @@
 					"/Users/fengjunwen/Work/Meiwei/paas/sdk/iOS/paas/ad-release-frameworks/Release-universal",
 					"/Users/fengjunwen/Work/Meiwei/paas/sdk/iOS/paas/ad-release-frameworks/Release-iphonesimulator",
 					"/Users/fengjunwen/Work/Meiwei/paas/sdk/iOS/paas/ad-release-frameworks/Release-iphoneos",
+					"/Users/fengjunwen/Work/Meiwei/paas/sdk/iOS/paas/sns-release-frameworks/Release-universal",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ActionSomething/ActionSomething-Prefix.pch";
 				INFOPLIST_FILE = "ActionSomething/ActionSomething-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ActionSomething",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-licucore",
+					"-framework",
+					AVOSCloud,
+					"-framework",
+					AVOSCloudUI,
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					CFNetwork,
+					"-framework",
+					AVOSCloudSNS,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreLocation,
+					"-framework",
+					CoreTelephony,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

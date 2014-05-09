@@ -7,8 +7,8 @@
 //
 
 #import "AVVLoginViewController.h"
-#import <AVOSCloudSNS/AVOSCloudSNS.h>
 #import <AVOSCloud/AVOSCloud.h>
+#import <AVOSCloudSNS/AVOSCloudSNS.h>
 #import <AVOSCloudSNS/AVUser+SNS.h>
 
 @interface AVVLoginViewController ()
@@ -36,6 +36,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (IBAction)loadMoreApps:(id)sender{
 }
 
 - (IBAction)loginWithWeibo:(id)sender {
