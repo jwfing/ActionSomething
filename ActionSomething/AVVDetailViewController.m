@@ -225,6 +225,7 @@
             [_msgs addObject:msg];
             [self updateMsgs:_msgs refresh:NO];
         }];
+        [item clearLocalData];
         [self.navigationController popToRootViewControllerAnimated:YES];
     }];
 }
